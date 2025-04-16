@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_landing">
+
+    <!-- Landing Fragment -->
+    <fragment
+        android:id="@+id/navigation_landing"
+        android:name="com.example.placementhub.ui.auth.LandingFragment"
+        android:label="Landing">
+        <action
+            android:id="@+id/action_landing_to_student_login"
+            app:destination="@id/navigation_student_login" />
+        <action
+            android:id="@+id/action_landing_to_placement_login"
+            app:destination="@id/navigation_placement_login" />
+    </fragment>
+
+    <!-- Student Login Fragment -->
+    <fragment
+        android:id="@+id/navigation_student_login"
+        android:name="com.example.placementhub.ui.auth.StudentLoginFragment"
+        android:label="Student Login">
+        <action
+            android:id="@+id/action_student_login_to_student_dashboard"
+            app:destination="@id/navigation_student_dashboard" />
+        <action
+            android:id="@+id/action_student_login_to_student_register"
+            app:destination="@id/navigation_student_register" />
+    </fragment>
+
+    <!-- Student Register Fragment -->
+    <fragment
+        android:id="@+id/navigation_student_register"
+        android:name="com.example.placementhub.ui.auth.StudentRegisterFragment"
+        android:label="Student Registration">
+        <action
+            android:id="@+id/action_student_register_to_student_login"
+            app:destination="@id/navigation_student_login" />
+    </fragment>
+
+    <!-- Placement Login Fragment -->
+    <fragment
+        android:id="@+id/navigation_placement_login"
+        android:name="com.example.placementhub.ui.auth.PlacementLoginFragment"
+        android:label="Placement Login">
+        <action
+            android:id="@+id/action_placement_login_to_placement_dashboard"
+            app:destination="@id/navigation_placement_dashboard" />
+    </fragment>
+
+    <!-- Student Dashboard Fragment -->
+    <fragment
+        android:id="@+id/navigation_student_dashboard"
+        android:name="com.example.placementhub.ui.student.StudentDashboardFragment"
+        android:label="Student Dashboard">
+        <action
+            android:id="@+id/action_student_dashboard_to_drive_list"
+            app:destination="@id/navigation_drive_list" />
+        <action
+            android:id="@+id/action_student_dashboard_to_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <!-- Placement Dashboard Fragment -->
+    <fragment
+        android:id="@+id/navigation_placement_dashboard"
+        android:name="com.example.placementhub.ui.placement.PlacementDashboardFragment"
+        android:label="Placement Dashboard">
+        <action
+            android:id="@+id/action_placement_dashboard_to_applications"
+            app:destination="@id/navigation_applications" />
+        <action
+            android:id="@+id/action_placement_dashboard_to_shortlist"
+            app:destination="@id/navigation_shortlist" />
+        <action
+            android:id="@+id/action_placement_dashboard_to_student_list"
+            app:destination="@id/navigation_student_list" />
+    </fragment>
+
+    <!-- Admin Dashboard Fragment -->
+    <fragment
+        android:id="@+id/navigation_admin_dashboard"
+        android:name="com.example.placementhub.ui.admin.AdminDashboardFragment"
+        android:label="Admin Dashboard">
+        <action
+            android:id="@+id/action_admin_dashboard_to_drive_management"
+            app:destination="@id/navigation_drive_management" />
+        <action
+            android:id="@+id/action_admin_dashboard_to_analytics"
+            app:destination="@id/navigation_analytics" />
+        <action
+            android:id="@+id/action_admin_dashboard_to_member_management"
+            app:destination="@id/navigation_member_management" />
+    </fragment>
+
+    <!-- Student List Fragment (CSV Upload) -->
+    <fragment
+        android:id="@+id/navigation_student_list"
+        android:name="com.example.placementhub.ui.student.StudentListFragment"
+        android:label="Student Database" />
+
+    <!-- Drive List Fragment -->
+    <fragment
+        android:id="@+id/navigation_drive_list"
+        android:name="com.example.placementhub.ui.student.DriveListFragment"
+        android:label="Placement Drives" />
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.placementhub.ui.student.ProfileFragment"
+        android:label="Profile" />
+
+    <!-- Applications Fragment -->
+    <fragment
+        android:id="@+id/navigation_applications"
+        android:name="com.example.placementhub.ui.placement.ApplicationsFragment"
+        android:label="Applications" />
+
+    <!-- Shortlist Fragment -->
+    <fragment
+        android:id="@+id/navigation_shortlist"
+        android:name="com.example.placementhub.ui.placement.ShortlistFragment"
+        android:label="Shortlist" />
+
+    <!-- Drive Management Fragment -->
+    <fragment
+        android:id="@+id/navigation_drive_management"
+        android:name="com.example.placementhub.ui.admin.DriveManagementFragment"
+        android:label="Drive Management" />
+
+    <!-- Analytics Fragment -->
+    <fragment
+        android:id="@+id/navigation_analytics"
+        android:name="com.example.placementhub.ui.admin.AnalyticsFragment"
+        android:label="Analytics" />
+
+    <!-- Member Management Fragment -->
+    <fragment
+        android:id="@+id/navigation_member_management"
+        android:name="com.example.placementhub.ui.admin.MemberManagementFragment"
+        android:label="Member Management" />
+
+</navigation> 

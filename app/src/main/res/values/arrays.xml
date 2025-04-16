@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Branch options -->
+    <string-array name="branch_options">
+        <item>Computer Science</item>
+        <item>Information Technology</item>
+        <item>Electronics and Communication</item>
+        <item>Electrical Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Civil Engineering</item>
+    </string-array>
+
+    <!-- Batch years -->
+    <string-array name="batch_options">
+        <item>2020-2024</item>
+        <item>2021-2025</item>
+        <item>2022-2026</item>
+        <item>2023-2027</item>
+    </string-array>
+
+    <!-- Gender options -->
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Backlog options -->
+    <string-array name="backlog_options">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4+</item>
+    </string-array>
+</resources> 

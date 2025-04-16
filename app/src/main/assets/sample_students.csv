@@ -1,0 +1,6 @@
+sapId,fullName,email,password,branch,rollNumber,cgpa,gender,backlogs,batch
+500123456,John Doe,john.doe@example.com,pass123,CSE,CSE123,8.5,Male,0,2023
+500123457,Jane Smith,jane.smith@example.com,pass123,ECE,ECE107,8.7,Female,0,2023
+500123458,Alex Johnson,alex.j@example.com,pass123,IT,IT114,7.9,Male,1,2023
+500123459,Sarah Williams,sarah.w@example.com,pass123,CSE,CSE124,9.2,Female,0,2023
+500123460,Michael Brown,michael.b@example.com,pass123,MECH,MECH105,8.1,Male,2,2023 

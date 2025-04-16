@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <CheckBox
+            android:id="@+id/checkbox_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkbox_select"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_branch_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Branch:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/checkbox_select"
+            app:layout_constraintTop_toBottomOf="@+id/text_name" />
+
+        <TextView
+            android:id="@+id/text_branch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_branch_label"
+            app:layout_constraintTop_toTopOf="@+id/text_branch_label" />
+
+        <TextView
+            android:id="@+id/text_roll_number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Roll No:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_branch_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_branch" />
+
+        <TextView
+            android:id="@+id/text_roll_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_roll_number_label"
+            app:layout_constraintTop_toTopOf="@+id/text_roll_number_label" />
+
+        <TextView
+            android:id="@+id/text_sap_id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="SAP ID:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_roll_number_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_roll_number" />
+
+        <TextView
+            android:id="@+id/text_sap_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_sap_id_label"
+            app:layout_constraintTop_toTopOf="@+id/text_sap_id_label" />
+
+        <TextView
+            android:id="@+id/text_cgpa_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="CGPA:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_sap_id_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_sap_id" />
+
+        <TextView
+            android:id="@+id/text_cgpa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_cgpa_label"
+            app:layout_constraintTop_toTopOf="@+id/text_cgpa_label" />
+
+        <TextView
+            android:id="@+id/text_gender_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Gender:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_cgpa_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_cgpa" />
+
+        <TextView
+            android:id="@+id/text_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_gender_label"
+            app:layout_constraintTop_toTopOf="@+id/text_gender_label" />
+
+        <TextView
+            android:id="@+id/text_backlogs_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Backlogs:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_gender_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_gender" />
+
+        <TextView
+            android:id="@+id/text_backlogs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_backlogs_label"
+            app:layout_constraintTop_toTopOf="@+id/text_backlogs_label" />
+
+        <TextView
+            android:id="@+id/text_batch_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Batch:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_backlogs_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_backlogs" />
+
+        <TextView
+            android:id="@+id/text_batch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_batch_label"
+            app:layout_constraintTop_toTopOf="@+id/text_batch_label" />
+
+        <TextView
+            android:id="@+id/text_email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Email:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_batch_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_batch" />
+
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_email_label"
+            app:layout_constraintTop_toTopOf="@+id/text_email_label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView> 

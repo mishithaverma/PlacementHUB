@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PLacementhub</string>
+    <!-- Spinner Prompts -->
+    <string name="branch_prompt">Select a Branch</string>
+    <string name="cgpa_prompt">Select Min CGPA</string>
+    <string name="gender_prompt">Select Gender</string>
+</resources>

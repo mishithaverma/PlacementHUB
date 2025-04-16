@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student CSV Upload"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_select_csv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select CSV File"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/txt_selected_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No file selected"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <CheckBox
+        android:id="@+id/chk_overwrite_duplicates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overwrite duplicates"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_upload_csv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:enabled="false"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_download_sample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download Sample CSV"
+        android:layout_marginBottom="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_upload"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/txt_upload_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/btn_csv_info"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="CSV Format Information"
+        android:src="@android:drawable/ic_dialog_info"/>
+
+</LinearLayout> 

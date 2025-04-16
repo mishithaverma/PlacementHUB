@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TableRow android:background="?attr/selectableItemBackground">
+        
+        <CheckBox
+            android:id="@+id/student_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/student_branch"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/student_roll_number"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/student_sap_id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/student_cgpa"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/student_gender"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/student_backlogs"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/student_batch"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/student_email"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@android:color/black" />
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />
+
+</TableLayout> 
